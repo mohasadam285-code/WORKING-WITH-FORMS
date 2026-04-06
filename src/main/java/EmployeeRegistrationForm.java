@@ -16,7 +16,7 @@ public class EmployeeRegistrationForm extends JFrame {
         add(createMainPanel());
     }
 
-    // ================= FRAME SETUP =================
+    
     private void initializeFrame() {
         setTitle("Employee Registration System");
         setSize(500, 600);
@@ -24,7 +24,7 @@ public class EmployeeRegistrationForm extends JFrame {
         setLayout(new BorderLayout());
     }
 
-    // ================= MAIN PANEL =================
+    
     private JPanel createMainPanel() {
         JPanel panel = new JPanel(new GridLayout(8, 2, 10, 10));
 
@@ -109,7 +109,7 @@ public class EmployeeRegistrationForm extends JFrame {
         return btn;
     }
 
-    // ================= LOGIC METHODS =================
+   
     private void handleSubmit() {
         String name = nameField.getText();
         String email = emailField.getText();
