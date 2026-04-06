@@ -52,7 +52,7 @@ public class EmployeeRegistrationForm extends JFrame {
         return panel;
     }
 
-    // ================= COMPONENT METHODS =================
+  
     private JTextField createNameField() {
         nameField = new JTextField();
         return nameField;
