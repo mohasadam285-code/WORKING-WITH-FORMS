@@ -15,6 +15,7 @@ class EmployeeRegistrationFormTest {
         form = new EmployeeRegistrationForm();
         form.setVisible(false);
     }
+    
 
     @AfterEach
     void tearDown() {
