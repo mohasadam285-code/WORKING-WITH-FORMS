@@ -31,6 +31,7 @@ class EmployeeRegistrationFormTest {
                 () -> assertNotNull(form.getLayout())
         );
     }
+    
 
     @Test
     void testValidateInputFailsWhenEmpty() {
