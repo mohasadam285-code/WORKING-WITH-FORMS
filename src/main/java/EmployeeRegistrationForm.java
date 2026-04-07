@@ -7,8 +7,8 @@ public class EmployeeRegistrationForm extends JFrame {
 
     private JTextField nameField, emailField;
     private JPasswordField passwordField;
-    private JComboBox<String> departmentBox;
-    private JTree orgTree;
+    JComboBox<String> departmentBox;
+    JTree orgTree;
     private JCalendar calendar;
 
     public EmployeeRegistrationForm() {
@@ -124,7 +124,7 @@ public class EmployeeRegistrationForm extends JFrame {
         JOptionPane.showMessageDialog(this, summary);
     }
 
-    private boolean validateInput(String name, String email, String password, Object node) {
+    boolean validateInput(String name, String email, String password, Object node) {
         if (name.isEmpty() || email.isEmpty() || password.isEmpty() || node == null) {
             JOptionPane.showMessageDialog(this, "Please fill all fields!");
             return false;
@@ -132,8 +132,8 @@ public class EmployeeRegistrationForm extends JFrame {
         return true;
     }
 
-    private String buildSummary(String name, String email, String password,
-                                String department, Object node) {
+    String buildSummary(String name, String email, String password,
+                        String department, Object node) {
 
         String maskedPassword = "*".repeat(password.length());
 
